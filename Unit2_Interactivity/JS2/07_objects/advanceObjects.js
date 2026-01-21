@@ -102,3 +102,28 @@ const robotFactoryShorthand = (model, mobile) => {
         }
     };
 }
+
+/**
+ * Object Destructuring
+ * Object destructuring allows you to extract properties from an object and assign them to variables.
+ * 
+ * Syntax example:
+ * const { property1, property2 } = objectName;
+ */
+
+const robot3 = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: {
+    beep() {
+      console.log('Beep Boop');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  }
+};
+    
+const { functionality } = robot3;
+
+functionality.beep();
