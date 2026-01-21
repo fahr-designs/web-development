@@ -60,3 +60,45 @@ console.log(`# of sensors before: ${robot.numOfSensors}`); // Outputs: 15
 robot.numOfSensors = 100; // Using the setter to update the number of sensors
 
 console.log(`# of sensors after: ${robot.numOfSensors}`); // Outputs: 100
+
+
+/** * Factory Functions
+ * Factory functions are functions that return an object.
+ */
+
+const robotFactory = (model, mobile) => {
+    return {
+        model: model,
+        mobile: mobile,
+        beep() {
+            console.log("Beep Boop");
+        }
+    };
+}
+
+const tinCan = robotFactory("P-500", true);
+const robot2 = robotFactory("P-333", false);
+
+tinCan.beep(); // Outputs: Beep Boop
+robot2.beep(); // Outputs: Beep Boop
+
+console.log(tinCan.model); // Outputs: P-501
+console.log(tinCan.mobile); // Outputs: true
+console.log(robot2.model); // Outputs: P-333
+console.log(robot2.mobile); // Outputs: false
+
+
+/** * Property Value Shorthand
+ * When the property name and variable name are the same, you can use the shorthand syntax.
+ * This can make your code more concise and easier to read since you don't have to repeat the names.
+ */
+
+const robotFactoryShorthand = (model, mobile) => {
+    return {
+        model,
+        mobile,
+        beep() {
+            console.log("Beep Boop");
+        }
+    };
+}
