@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    
+}
+
+nav li {
+    display: inline-flex;
+    margin: 1rem 3rem;
+}
+
+.main-header {
+    width: 100%;
+    text-align: center;
+    background-image: url('../images/pattern.jpeg');    
+}
+
+.main-header h1 {
+    font-family: 'Helvetica';
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Helvetica';
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.brushes h2 {
+    background-color: mediumspringgreen;
+}
+
+.frames h2 {
+    background-color: lightcoral;
+}
+
+.paint h2 {
+    background-color: skyblue;
+}
+
+.price {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    color: blue;
+}
